@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="jquery.js" type="text/javascript"></script>
+<script src="main.js" type="text/javascript"></script>
+
+
+</head>
+
+
+<body>
+    <div id="main">
+        <div class="header">
+            <h1>Formulario de Registo</h1>
+
+
+
+        </div>
+        <form action="registor.php" method="get">
+
+            <div class="row">
+
+                <div class="col1">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name">
+
+
+
+                </div>
+                <div class="col2">
+                    <label id="user" for="username">Username:</label>
+                    <input type="text" name="user" id="user">
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="email">Email:</label>
+                    <input type="email" name="" id="email">
+
+                </div>
+                <div class="col2">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="pass">
+
+
+                </div>
+            <div class="row">
+                <label for="Morada">Morada Completa:</label>
+                <input type="text" name="morada" id="morada">
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col1">
+                    <label for="data">Data:</label>
+                    <input type="date" name="" id="data">
+
+
+                </div>
+                <div class="col2">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option>masculino</option>
+                        <option>femenino</option>
+
+
+                    </select>
+
+
+
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col1">
+                    <input type="submit" name="" id="submit" value="Registar" >
+
+
+
+                </div>
+
+
+            </div>
+
+
+            </div>
