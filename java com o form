@@ -1,0 +1,46 @@
+/*
+    codigo principal de jQuery
+*/
+
+// $(elemento)
+// $(document)
+// $("body")
+// $(#main)
+// $(".row")
+//----- EVENTS ------
+//-HOVER
+//-FOCUS
+//-CLICK
+//-ACTIVE
+
+
+
+$(document).ready(function(){
+    console.log("document is ready");
+
+    $("input, textarea").on("focusin focusout", function(EVENT){
+        /* $(this) refere se ao elemento selecionado nesta função*/
+        $(this).toggleClass("border-form")
+        console.log(EVENT);
+    })
+
+
+    $("#loader").hide();
+    $("form").on("submit", function(EVENT){
+        //log q o evento aconteceu
+        console.log("submit");
+        //prevenir ação default = que a pagina seja recarregada
+        EVENT.preventDefault();
+        console.log("preventDefault");
+        $("#loader").fadeIn(3000, function(){ //callback
+            console.log("fadeIn");
+            $(this).text("Registado com sucesso..");
+        })
+
+
+
+    })
+
+   
+
+});
